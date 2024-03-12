@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/81c3fa0a50.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/kriti.png" class="logo">
+            <ul id="sidemenu">
+                 <li><a href="#header">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#services">Services</a></li>
+                 <li><a href="#portfolio">Portfolio</a></li>
+                 <li><a href="#contact">Contact</a></li>
+                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full-Stack Developer</p>
+            <h1>Hi,I'm <span>Kriti</span><br> from India </h1>
+
+        </div>
+    </div>
+</div> 
+<!-------------------------------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user2.png">
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1> 
+              <p>
+                Hi there! I'm a tech lover who's been building websites and apps for 1 years. I make sure everything works smoothly behind the scenes and looks great on your screen. I love coming up with new ideas and solving puzzles to make cool stuff. Let's team up and create something awesome together!</p> 
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Programming Languages</span><br>Python,Django, HTML,CSS,Javascript,SQL,Flutter</li>
+
+                    <li><span>Software/Frameworks</span><br>GIT, VS code, MYSQL, Code,blocks,Jupyter Notebook,Github, ChatGpt,Black-box AI</li>
+
+                    <li><span>Soft-Skills</span><br> Time Management,Problem‑Solving, Engaging Presentation,Leadership</li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Nov 2023 ‑ Dec 2023</span><br>Infotrixs, Front‑End Intern.</li>
+                    <P>• Developed a Pomodoro timer application using HTML, CSS, JavaScript, and Next.js, enabling users to manage work and break inter‑
+                        vals efficiently.</P>
+
+                     <p>• Implemented customizable timer durations and intuitive user interface design with CSS, ensuring a seamless and personalized user
+                        experience.</p>
+
+                       <p>• Utilized Next.js for server‑side rendering and optimized performance, delivering a responsive and performant application for en‑
+                        hanced productivity..</P>
+
+                    <li><span>Nov 2022 ‑ Feb 2023</span><br>S and Y Software Solutions, Flutter </li>
+                    <p>• Develops cross‑platform mobile applications using Flutter and Dart.</p>
+
+                    <p>• Collaborates with team members to meet project requirements and ensure quality.</p>
+
+                    <p>• Implements UI/UX designs and integrates third‑party APIs for seamless user experiences..
+                    </p>
+
+                    <!-- <li><span>2016-2017</span><br>Internship at ekart eCommerce. </li> -->
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2019‑23  (7.79/10)</span><br>B.Tech in Computer Science and Engineering, Katihar Engineering College </li>
+
+                    <li><span>2017-19  (78.4/100)</span><br>Secondary Education in PCM, Bihar School Examination Board </li>
+
+                    <li><span>2016-17  (82/100)</span><br>Matriculation, Bihar School Examination Board </li>
+                </ul>
+                
+              </div>
+
+
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- -----------------------Services----------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>
+                    Transform your online presence with our cutting-edge web design services. We specialize in crafting visually stunning and user-friendly websites tailored to your brand. Our team combines creativity with technical expertise to deliver engaging digital experiences that captivate your audience. Let us elevate your online platform to new heights.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Back-End Design</h2>
+                <p>Empower your application's functionality with our specialized backend design services. Our team architects robust and scalable solutions tailored to your unique requirements. From database design to API development, we ensure seamless integration and efficient data management. Partner with us to optimize performance and streamline processes, allowing your application to thrive in the digital landscape.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>
+                    Revolutionize your app's interface and functionality with our expert design services. We blend intuitive user experiences with sleek aesthetics to create standout mobile applications. From wireframing to prototyping, our team ensures every detail is meticulously crafted to enhance user engagement. Elevate your app's performance and user satisfaction with our comprehensive design solutions.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------portfolio------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Snake Game</h3>
+                    <p>
+                        Experience the classic Snake game reimagined with modern web technologies. Our HTML, CSS, and JavaScript expertise ensures smooth gameplay and responsive design. Navigate through the grid, collect food, and grow your snake dynamically—all within a captivating browser-based environment. Bring nostalgic fun to your users with our sleek and interactive Snake game implementation.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3>Weather Forecating App</h3>
+                    <p>Empower your users with real-time weather updates through our HTML, CSS, and JavaScript-driven forecasting solution. Seamlessly integrate weather APIs to display accurate predictions with intuitive visualizations, enhancing user experience. With dynamic styling and interactive features, users can easily access forecasts tailored to their location, keeping them informed and engaged on any device. Elevate your website's functionality and utility with our comprehensive weather forecasting solution.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" >
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        Craft a stunning portfolio website with our expertise in HTML, CSS, and JavaScript. Showcase your work elegantly with smooth animations and responsive design, ensuring a seamless experience across devices. Our customizable templates and dynamic layouts enable you to highlight your skills and achievements effectively, attracting potential clients or employers. Stand out in the digital realm with a professional portfolio that reflects your unique style and creativity.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ---------------Contact------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>kritinitya7@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>6202550669</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100022108053397"><i class="fa-brands fa-facebook"></i></a>
+                
+                    <a href="https://twitter.com/KritiNitya7"><i class="fa-brands fa-twitter-square"></i></a>
+                
+                    <a href="https://www.instagram.com/_kriti_nitya_/"><i class="fa-brands fa-instagram"></i></a>
+                
+                    <a href="www.linkedin.com/in/
+                    kriti-nitya-645537288
+                    "><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/myResume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Kriti. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+   
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwG5DeSGGk2VGDphsL-dRsybVpIxg8D4HWIoO8v3qi-bbCAeyLH6tMyl3UBLC-RgKEn9w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
